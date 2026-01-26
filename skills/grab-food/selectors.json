@@ -1,0 +1,99 @@
+{
+  "_comment": "GrabFood UI selectors - Update when UI changes",
+  "_lastUpdated": "2024-01-26",
+
+  "search": {
+    "input": "input[placeholder*='Search']",
+    "button": "button[type='submit']",
+    "results": ".search-results"
+  },
+
+  "restaurant": {
+    "card": "[data-testid='restaurant-card']",
+    "name": ".restaurant-name, h3.name",
+    "rating": ".rating, [data-testid='rating']",
+    "distance": ".distance, [data-testid='distance']",
+    "deliveryTime": ".delivery-time, [data-testid='eta']",
+    "deliveryFee": ".delivery-fee",
+    "promo": ".promo-badge",
+    "closed": ".closed-badge"
+  },
+
+  "menu": {
+    "category": ".menu-category, [data-testid='menu-category']",
+    "categoryName": ".category-name, h2",
+    "item": ".menu-item, [data-testid='menu-item']",
+    "itemName": ".item-name, h4",
+    "itemPrice": ".item-price, .price",
+    "itemDescription": ".item-description, .description",
+    "itemImage": ".item-image img",
+    "addButton": "button[data-testid='add-to-cart'], .add-btn",
+    "outOfStock": ".out-of-stock"
+  },
+
+  "cart": {
+    "icon": "[data-testid='cart-icon'], .cart-icon",
+    "badge": ".cart-badge, .cart-count",
+    "drawer": ".cart-drawer",
+    "item": ".cart-item",
+    "itemName": ".item-name",
+    "itemQuantity": ".quantity",
+    "itemPrice": ".price",
+    "removeButton": ".remove-btn, [data-testid='remove-item']",
+    "quantityPlus": ".qty-plus",
+    "quantityMinus": ".qty-minus",
+    "subtotal": ".subtotal",
+    "total": ".cart-total, .total-price",
+    "checkoutButton": "[data-testid='checkout'], .checkout-btn"
+  },
+
+  "checkout": {
+    "page": ".checkout-page",
+    "orderSummary": ".order-summary",
+    "itemList": ".order-items",
+    "deliveryAddress": ".delivery-address",
+    "deliveryFee": ".delivery-fee",
+    "serviceFee": ".service-fee",
+    "discount": ".discount",
+    "total": ".total-price",
+    "estimatedTime": ".estimated-time, .eta",
+    "paymentMethod": ".payment-method",
+    "changePayment": ".change-payment",
+    "promoInput": "input[placeholder*='promo']",
+    "applyPromo": ".apply-promo",
+    "confirmButton": "[data-testid='confirm-order'], .confirm-btn",
+    "backButton": ".back-btn"
+  },
+
+  "orderTracking": {
+    "page": ".order-tracking",
+    "orderId": ".order-id",
+    "status": ".order-status",
+    "timeline": ".status-timeline",
+    "timelineItem": ".timeline-item",
+    "driverInfo": ".driver-info",
+    "driverName": ".driver-name",
+    "driverPhone": ".driver-phone",
+    "driverVehicle": ".driver-vehicle",
+    "eta": ".eta, .estimated-arrival",
+    "map": ".tracking-map",
+    "cancelButton": "[data-testid='cancel-order']",
+    "helpButton": ".help-btn"
+  },
+
+  "auth": {
+    "loginButton": "[data-testid='login-button']",
+    "phoneInput": "input[type='tel']",
+    "otpInput": "input[data-testid='otp-input']",
+    "submitButton": "button[type='submit']",
+    "userMenu": ".user-menu"
+  },
+
+  "common": {
+    "loading": ".loading, .spinner",
+    "error": ".error-message",
+    "modal": ".modal",
+    "modalClose": ".modal-close",
+    "toast": ".toast-notification"
+  }
+}
