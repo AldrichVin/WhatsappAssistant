@@ -1,0 +1,125 @@
+{
+  "$schema": "https://clawd.bot/schema/config.json",
+  "_comment": "Clawdbot Configuration for WhatsApp AI Assistant",
+
+  "name": "Andi - WhatsApp Assistant",
+  "version": "1.0.0",
+
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "allowFrom": [],
+      "_comment_allowFrom": "Add allowed phone numbers here, e.g., ['+6281234567890']"
+    }
+  },
+
+  "models": {
+    "default": "claude-3-5-sonnet",
+    "fallback": ["claude-3-haiku", "gpt-4o-mini"],
+    "providers": {
+      "anthropic": {
+        "enabled": true,
+        "auth": "setup-token",
+        "_comment": "Use 'clawdbot models auth paste-token --provider anthropic' to configure"
+      },
+      "openai": {
+        "enabled": false,
+        "apiKey": "${OPENAI_API_KEY}"
+      }
+    }
+  },
+
+  "browser": {
+    "enabled": true,
+    "headless": false,
+    "executablePath": "/usr/bin/chromium",
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ]
+  },
+
+  "agents": {
+    "routing": {
+      "rules": [
+        {
+          "match": { "channel": "whatsapp" },
+          "agent": "default"
+        }
+      ]
+    },
+    "list": [
+      {
+        "id": "default",
+        "workspace": "~/clawd",
+        "model": "claude-3-5-sonnet"
+      }
+    ]
+  },
+
+  "skills": {
+    "enabled": [
+      "gmail",
+      "calendar",
+      "grab-food"
+    ],
+    "paths": [
+      "~/clawd/skills"
+    ]
+  },
+
+  "hooks": {
+    "gmail_pubsub": {
+      "enabled": false,
+      "project_id": "${GCP_PROJECT_ID}",
+      "topic": "gmail-notifications",
+      "_comment": "Enable after setting up GCP PubSub"
+    }
+  },
+
+  "cron": {
+    "enabled": true,
+    "jobs": {
+      "morning_briefing": {
+        "schedule": "0 7 * * *",
+        "timezone": "Asia/Jakarta",
+        "action": "send_message",
+        "payload": {
+          "channel": "whatsapp",
+          "message": "Selamat pagi! Ini briefing hari ini..."
+        },
+        "enabled": false,
+        "_comment": "Enable and configure after setup"
+      }
+    }
+  },
+
+  "memory": {
+    "enabled": true,
+    "path": "~/clawd/memory",
+    "retention_days": 30
+  },
+
+  "logging": {
+    "level": "info",
+    "file": "~/clawd/logs/clawdbot.log",
+    "maxSize": "10m",
+    "maxFiles": 5
+  },
+
+  "security": {
+    "rateLimit": {
+      "enabled": true,
+      "maxRequests": 60,
+      "windowMs": 60000
+    },
+    "confirmActions": [
+      "send_email",
+      "create_event",
+      "confirm_order",
+      "delete_event"
+    ]
+  }
+}

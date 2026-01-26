@@ -1,0 +1,94 @@
+{
+  "$schema": "https://clawd.bot/schema/multi-user.json",
+  "_comment": "Multi-user routing configuration for SaaS deployment",
+
+  "routing": {
+    "default_agent": "default",
+    "rules": [
+      {
+        "match": {
+          "channel": "whatsapp",
+          "sender": "+6281234567890"
+        },
+        "agent": "user-001",
+        "comment": "Example user routing"
+      }
+    ]
+  },
+
+  "agents": {
+    "template": {
+      "model": "claude-3-5-sonnet",
+      "workspace_base": "~/clawd/users",
+      "skills": ["gmail", "calendar", "grab-food"]
+    },
+    "list": [
+      {
+        "id": "default",
+        "workspace": "~/clawd",
+        "model": "claude-3-5-sonnet"
+      }
+    ]
+  },
+
+  "onboarding": {
+    "enabled": true,
+    "flow": [
+      {
+        "step": "welcome",
+        "message": "Halo! Selamat datang di Andi, asisten AI kamu. Untuk memulai, aku perlu beberapa info..."
+      },
+      {
+        "step": "name",
+        "prompt": "Siapa nama kamu?",
+        "store": "user.name"
+      },
+      {
+        "step": "timezone",
+        "prompt": "Kamu di zona waktu mana? (WIB/WITA/WIT)",
+        "default": "WIB",
+        "store": "user.timezone"
+      },
+      {
+        "step": "gmail_oauth",
+        "prompt": "Mau hubungkan Gmail? Klik link ini: {oauth_url}",
+        "optional": true
+      },
+      {
+        "step": "calendar_oauth",
+        "prompt": "Mau hubungkan Google Calendar juga? Klik link ini: {oauth_url}",
+        "optional": true
+      },
+      {
+        "step": "complete",
+        "message": "Setup selesai! Sekarang kamu bisa tanya apa saja. Ketik 'bantuan' untuk lihat apa yang bisa aku bantu."
+      }
+    ]
+  },
+
+  "user_management": {
+    "auto_create_workspace": true,
+    "workspace_template": {
+      "copy_files": [
+        "AGENTS.md",
+        "SOUL.md"
+      ],
+      "create_files": [
+        "USER.md",
+        "MEMORY.md"
+      ]
+    }
+  },
+
+  "limits": {
+    "max_users": 100,
+    "max_messages_per_day": 500,
+    "max_skills_per_user": 10
+  },
+
+  "billing": {
+    "enabled": false,
+    "provider": null,
+    "_comment": "Configure when ready to monetize"
+  }
+}
