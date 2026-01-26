@@ -1,0 +1,36 @@
+{
+  "name": "whatsapp-ai-assistant",
+  "version": "1.0.0",
+  "description": "WhatsApp AI Assistant using Clawdbot for Indonesian users",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node scripts/setup-local.js",
+    "oauth": "node scripts/oauth-server.js",
+    "test:gmail": "node skills/gmail/gmail-tools.js",
+    "test:calendar": "node skills/calendar/calendar-tools.js",
+    "lint": "eslint skills/**/*.js scripts/**/*.js",
+    "health": "bash scripts/health-check.sh"
+  },
+  "keywords": [
+    "whatsapp",
+    "ai",
+    "assistant",
+    "clawdbot",
+    "indonesia",
+    "gmail",
+    "calendar",
+    "grabfood"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "googleapis": "^134.0.0",
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

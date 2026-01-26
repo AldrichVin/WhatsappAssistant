@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# OAuth credentials - NEVER COMMIT
+credentials.json
+token.json
+**/credentials.json
+**/token.json
+
+# Browser automation
+cookies.json
+**/cookies.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Memory and user data
+memory/
+users/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build output
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Clawdbot internal
+.clawdbot/
+.clawd/
