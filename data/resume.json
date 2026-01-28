@@ -1,0 +1,249 @@
+{
+  "personal": {
+    "name": "Aldrich Vincent",
+    "email": "aldrichvin040205@gmail.com",
+    "phone": "+628170511109",
+    "phoneAU": "+61480607563",
+    "location": "Melbourne, Australia / Jakarta, Indonesia",
+    "linkedin": "https://www.linkedin.com/in/aldrich-vincent-4463b2355/",
+    "github": "https://github.com/AldrichVin",
+    "portfolio": null
+  },
+
+  "summary": "Recent Computer Science graduate from Monash University specializing in Data Science with a 3.81 GPA. Experienced in building ETL pipelines, interactive dashboards, and full-stack applications. Proven track record in data analysis through internship at Veve Clothing where I optimized inventory and sales tracking. Passionate about turning data into actionable insights.",
+
+  "education": [
+    {
+      "degree": "Bachelor of Computer Science (Data Science)",
+      "institution": "Monash University",
+      "location": "Melbourne, Australia",
+      "graduationDate": "2025-11",
+      "gpa": "3.81/4.0",
+      "highlights": []
+    },
+    {
+      "degree": "Diploma of Computer Science",
+      "institution": "Monash College",
+      "location": "Jakarta, Indonesia",
+      "graduationDate": "2023-11",
+      "gpa": "4.0/4.0",
+      "highlights": [
+        "Principal's Merit Award for outstanding academic performance"
+      ]
+    }
+  ],
+
+  "experience": [
+    {
+      "title": "Data Analyst Intern (Operations & Sales)",
+      "company": "Veve Clothing",
+      "location": "Jakarta, Indonesia",
+      "startDate": "2023-01",
+      "endDate": "2023-12",
+      "highlights": [
+        "Designed and maintained Excel-based data models and dashboards to analyse sales performance, inventory turnover, and demand patterns",
+        "Automated stock and sales tracking workflows using Excel formulas and structured datasets, reducing manual processing time and improving reporting accuracy",
+        "Analysed historical sales and inventory data to identify inefficiencies and optimise replenishment decisions, contributing to improved stock availability",
+        "Leveraged social media and campaign performance data to evaluate marketing effectiveness and inform targeting strategies"
+      ]
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "DataPraktis Marketplace Platform",
+      "description": "Full-stack marketplace connecting SMBs with data analysts",
+      "organization": "Personal Project",
+      "startDate": "2025-11",
+      "endDate": "present",
+      "technologies": ["Next.js", "TypeScript", "PostgreSQL", "Supabase", "Midtrans API"],
+      "highlights": [
+        "Building a full-stack marketplace using Next.js, TypeScript, and PostgreSQL",
+        "Designed analyst-client matching logic, role-based access control, and project workflows",
+        "Integrated secure escrow-style payments via Midtrans API and developed admin tools"
+      ],
+      "url": "https://github.com/AldrichVin/DataPraktis"
+    },
+    {
+      "name": "NBA Player Ranking Dashboard",
+      "description": "Interactive analytics dashboard addressing biases in basketball rankings",
+      "organization": "Monash University",
+      "startDate": "2025-02",
+      "endDate": "2025-12",
+      "technologies": ["Flask", "R", "MongoDB", "JavaScript", "Docker"],
+      "highlights": [
+        "Built an interactive NBA analytics dashboard using Flask, R, MongoDB, and JavaScript",
+        "Designed a statistical ranking model using z-score normalization, PCA, and weighted metrics",
+        "Automated R-based ETL pipelines to ingest and process live NBA data",
+        "Deployed the application using Docker, Git, and Agile practices"
+      ],
+      "url": "https://github.com/AldrichVin/NBA-Unbiased-Ranking-System"
+    },
+    {
+      "name": "Data Visualization of Australia's Weather",
+      "description": "Interactive climate trends visualization using geospatial and time-series data",
+      "organization": "Monash University",
+      "startDate": "2025-06",
+      "endDate": "2025-12",
+      "technologies": ["R", "Vega-Lite", "Vega", "ETL"],
+      "highlights": [
+        "Built a lightweight ETL pipeline to extract public climate and GIS datasets, clean and transform data using R",
+        "Built interactive analytical dashboards using Vega-Lite and Vega, combining geospatial and time-series visualisations",
+        "Analysed environmental trends including bushfire hotspots and koala habitat distribution"
+      ],
+      "url": "https://github.com/AldrichVin/Australia-s-Weather-Data-Visualization"
+    },
+    {
+      "name": "MonEquip Data Warehousing",
+      "description": "End-to-end data warehouse with star schema design",
+      "organization": "Monash University",
+      "startDate": "2025-06",
+      "endDate": "2025-12",
+      "technologies": ["SQL", "Power BI", "ETL", "Data Modeling"],
+      "highlights": [
+        "Designed an end-to-end data warehouse using a star schema with fact and dimension tables",
+        "Implemented SCD Type 2 and temporal modelling to preserve historical pricing and attribute changes",
+        "Performed advanced SQL analytics using ROLLUP, CUBE, and window functions",
+        "Built a Power BI dashboard and analytical poster to communicate insights"
+      ],
+      "url": null
+    },
+    {
+      "name": "Crypto Pulse",
+      "description": "Cryptocurrency portfolio tracker with sentiment analysis and predictions",
+      "organization": "Personal Project",
+      "startDate": "2024-01",
+      "endDate": "2024-12",
+      "technologies": ["JavaScript", "React", "API Integration"],
+      "highlights": [
+        "Built a cryptocurrency portfolio tracker with sentiment analysis",
+        "Implemented fantasy league and prediction features"
+      ],
+      "url": "https://github.com/AldrichVin/crypto-pulse"
+    },
+    {
+      "name": "Community Oracle Network",
+      "description": "Prediction platform where accuracy determines influence",
+      "organization": "Personal Project",
+      "startDate": "2024-01",
+      "endDate": "2024-12",
+      "technologies": ["TypeScript", "React"],
+      "highlights": [
+        "Built a platform where users make predictions and accurate predictors gain more influence"
+      ],
+      "url": "https://github.com/AldrichVin/CommunityOracleNetwork"
+    }
+  ],
+
+  "skills": {
+    "technical": [
+      "Python",
+      "SQL",
+      "JavaScript",
+      "TypeScript",
+      "R",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "ETL Pipelines",
+      "Data Wrangling",
+      "Exploratory Data Analysis",
+      "MongoDB",
+      "PostgreSQL",
+      "Oracle SQL",
+      "Firebase",
+      "Supabase",
+      "React",
+      "Next.js",
+      "Flask",
+      "Tailwind CSS",
+      "Vite",
+      "Tableau",
+      "Power BI",
+      "Vega-Lite",
+      "Jupyter Notebook",
+      "RStudio",
+      "Docker",
+      "Git",
+      "GitHub"
+    ],
+    "categories": {
+      "languages": ["Python", "SQL", "JavaScript", "TypeScript", "R"],
+      "dataAnalysis": ["Pandas", "NumPy", "Matplotlib", "ETL Pipelines", "Data Wrangling", "EDA"],
+      "databases": ["MongoDB", "PostgreSQL", "Oracle SQL", "Firebase", "Supabase"],
+      "webDevelopment": ["React", "Next.js", "Flask", "Tailwind CSS", "Vite", "HTML", "CSS"],
+      "visualization": ["Tableau", "Power BI", "Vega-Lite", "Jupyter Notebook"],
+      "tools": ["Docker", "Git", "GitHub", "RStudio"]
+    },
+    "soft": [
+      "Data Analysis",
+      "Problem Solving",
+      "Communication",
+      "Team Leadership",
+      "Project Management",
+      "Agile/Scrum"
+    ]
+  },
+
+  "languages": [
+    {
+      "language": "Indonesian",
+      "proficiency": "Native"
+    },
+    {
+      "language": "English",
+      "proficiency": "Fluent (Academic)"
+    }
+  ],
+
+  "certifications": [],
+
+  "awards": [
+    {
+      "name": "Top 10 Academic Excellence Award",
+      "issuer": "Bina Tunas Bangsa School",
+      "description": "Recognized among the top 10 highest-performing International Baccalaureate (IB) students"
+    },
+    {
+      "name": "Principal's Merit Award",
+      "issuer": "Monash College",
+      "description": "Awarded for outstanding academic performance and exemplary conduct"
+    }
+  ],
+
+  "leadership": [
+    {
+      "role": "OSIS (Student Council) Member",
+      "organization": "Bina Tunas Bangsa School",
+      "highlights": [
+        "Coordinated student-led initiatives including school events, community-service projects, and academic competitions",
+        "Acted as liaison between students and school administration",
+        "Led a team of 10 peers to execute a charity donation drive, achieving fundraising goal ahead of schedule"
+      ]
+    }
+  ],
+
+  "preferences": {
+    "jobTypes": ["Full-time", "Remote", "Hybrid"],
+    "targetRoles": [
+      "Data Analyst",
+      "Junior Data Scientist",
+      "Business Intelligence Analyst",
+      "Data Engineer",
+      "Full Stack Developer",
+      "Software Engineer"
+    ],
+    "industries": ["Technology", "E-commerce", "Fintech", "Consulting", "Startups"],
+    "locations": ["Jakarta", "Melbourne", "Singapore", "Remote"],
+    "minSalaryIDR": 10000000,
+    "maxSalaryIDR": 25000000,
+    "minSalaryAUD": 60000,
+    "maxSalaryAUD": 90000,
+    "willingToRelocate": true,
+    "noticePeriod": "Immediate",
+    "visaStatus": {
+      "indonesia": "Citizen",
+      "australia": "Student Visa / Graduate Visa eligible"
+    }
+  }
+}
